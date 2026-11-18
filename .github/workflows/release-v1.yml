@@ -1,0 +1,26 @@
+name: Publish v1.0.0
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/release-v1.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Publish GitHub release
+        run: |
+          gh release view v1.0.0 >/dev/null 2>&1 && exit 0
+          gh release create v1.0.0 --target "$GITHUB_SHA" --title "v1.0.0 — Автомойка 4 Поста" --notes-file - <<'NOTES'
+          - Отредактировали тексты главной страницы, прайса и инструкций.
+          - На первом экране теперь «Автомойка 4 Поста».
+          - Пронумеровали 15 мест для фотографий. Номера и сюжеты собраны в [инструкции по фото](https://github.com/dangensquangens/4posta/blob/v1.0.0/assets/photos/README.md).
+          NOTES

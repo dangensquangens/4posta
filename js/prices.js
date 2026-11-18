@@ -161,7 +161,7 @@ function setCategory(value) {
     cell.hidden = !showAll && cell.dataset.i !== value;
   }
   categoryText.textContent = showAll
-    ? 'Цены для всех пяти категорий автомобилей.'
+    ? 'Сравните цены по всем категориям.'
     : catalog.carCategories[Number(value)];
 }
 
