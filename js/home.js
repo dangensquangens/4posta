@@ -23,10 +23,10 @@ for (const id of ['technical', 'euro-standard', 'euro-complex', 'four-posts']) {
 // Add owner-provided images here. Each entry can include srcset and sizes for responsive delivery.
 const photos = {
   'hero': { src: 'assets/photos/hero.webp', alt: 'Mercedes в моечном боксе «4 Поста»' },
-  'wash': { src: 'assets/photos/wash.webp', alt: 'Мойка Audi, нанесение пены и смыв' },
+  'wash': { src: 'assets/photos/wash-8555.webp', alt: 'Audi в пене и смыв водой' },
   'interior': { src: 'assets/photos/interior.webp', alt: 'Чистка сидений, воздуховодов и пола автомобиля' },
   'polish': { src: 'assets/photos/polish.webp', alt: 'Полировка двери синего автомобиля' },
-  'tires': { src: 'assets/photos/tires.webp', alt: 'Как ремонтируют прокол шины' },
+  'tires': { src: 'assets/photos/tires-8556.webp', alt: 'Шиномонтаж: снятие колеса и ремонт прокола' },
   'gallery-1': { src: 'assets/photos/gallery-1.webp', alt: 'Общий вид боксов автомойки «4 Поста»' },
   'gallery-2': { src: 'assets/photos/gallery-2.webp', alt: 'Ручная чистка светлого сиденья Mercedes' },
   'gallery-3': { src: 'assets/photos/gallery-3.webp', alt: 'Подкапотное пространство до и после мойки' },
