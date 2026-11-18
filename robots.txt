@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dangensquangens.github.io/avtomoyka-4-posta/sitemap.xml
