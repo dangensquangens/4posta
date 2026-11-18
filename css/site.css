@@ -115,10 +115,6 @@ address { font-style: normal; }
 .popular-list a { font-weight: 650; text-decoration: none; }
 .popular-list a:hover { color: var(--blue-text); }
 .popular-list strong { color: var(--blue-text); white-space: nowrap; }
-.split { display: grid; gap: 1.4rem 3rem; align-items: center; }
-.about-media { min-height: 13rem; background-color: #cbd9ea; }
-.split .section-title { margin: 0; }
-.split .text-link { margin-top: .5rem; }
 .coffee { display: flex; align-items: center; gap: .9rem; padding: 1rem 1.15rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
 .coffee img { flex: 0 0 auto; width: 3rem; height: 3rem; }
 .coffee h2 { font-size: 1.1rem; letter-spacing: -.015em; }
@@ -142,7 +138,9 @@ dialog::backdrop { background: #101d36db; }
 .contact-inner .eyebrow { color: #b8d0ff; margin-bottom: .75rem; }
 .contact-inner address { display: grid; gap: .28rem; margin-block: .9rem 1.25rem; color: #e2eafa; }
 .contact-inner address a { width: fit-content; text-underline-offset: 3px; }
-.entrance-media { min-height: 12rem; background-color: #294367; background-image: repeating-linear-gradient(135deg, transparent 0 21px, #ffffff14 21px 22px); }
+.queue-note { max-width: 32rem; margin-bottom: 1.25rem; color: #e2eafa; }
+.entrance-media { min-height: clamp(15rem, 48vw, 24rem); background-color: #294367; background-image: repeating-linear-gradient(135deg, transparent 0 21px, #ffffff14 21px 22px); }
+.entrance-media img { object-position: 50% 40%; }
 
 .price-intro { background: var(--soft); border-bottom: 1px solid var(--line); padding-block: clamp(2rem, 5vw, 4.5rem) clamp(1.25rem, 3vw, 2.75rem); }
 .price-intro h1 { margin-block: .55rem .8rem; }
@@ -204,9 +202,8 @@ dialog::backdrop { background: #101d36db; }
   .hero { grid-template-columns: minmax(0, 1.03fr) minmax(0, 1fr); align-items: stretch; gap: clamp(1.5rem, 4vw, 4rem); }
   .hero-copy { padding-block: 1.3rem; }
   .hero-media { min-height: 0; }
-  .split, .popular, .contact-inner { grid-template-columns: 1fr 1fr; }
+  .popular, .contact-inner { grid-template-columns: 1fr 1fr; }
   .popular-list li { padding-inline: 1rem; font-size: .95rem; }
-  .about-media { min-height: 18rem; }
   .gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .gallery-media { min-height: 9.5rem; }
   .gallery-media:last-child { grid-column: span 2; }

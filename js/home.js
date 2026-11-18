@@ -22,7 +22,18 @@ for (const id of ['technical', 'euro-standard', 'euro-complex', 'four-posts']) {
 
 // Add owner-provided images here. Each entry can include srcset and sizes for responsive delivery.
 const photos = {
-  // hero: { src: 'assets/photos/hero.webp', alt: 'Описание реальной фотографии' },
+  'hero': { src: 'assets/photos/hero.webp', alt: 'Mercedes в моечном боксе «4 Поста»' },
+  'wash': { src: 'assets/photos/wash.webp', alt: 'Мойка Audi, нанесение пены и смыв' },
+  'interior': { src: 'assets/photos/interior.webp', alt: 'Чистка сидений, воздуховодов и пола автомобиля' },
+  'polish': { src: 'assets/photos/polish.webp', alt: 'Полировка двери синего автомобиля' },
+  'tires': { src: 'assets/photos/tires.webp', alt: 'Как ремонтируют прокол шины' },
+  'gallery-1': { src: 'assets/photos/gallery-1.webp', alt: 'Общий вид боксов автомойки «4 Поста»' },
+  'gallery-2': { src: 'assets/photos/gallery-2.webp', alt: 'Ручная чистка светлого сиденья Mercedes' },
+  'gallery-3': { src: 'assets/photos/gallery-3.webp', alt: 'Подкапотное пространство до и после мойки' },
+  'gallery-4': { src: 'assets/photos/gallery-4.webp', alt: 'Передняя часть салона со стороны пассажира' },
+  'gallery-5': { src: 'assets/photos/gallery-5.webp', alt: 'Обивка сиденья крупным планом, два кадра' },
+  'gallery-6': { src: 'assets/photos/gallery-6.webp', alt: 'Задние сиденья и коврик в салоне' },
+  'entrance': { src: 'assets/photos/entrance.webp', alt: 'Въезд под навесом с парковочным знаком' },
 };
 
 const dialog = document.querySelector('#lightbox');
@@ -62,7 +73,4 @@ for (const frame of document.querySelectorAll('[data-photo]')) {
   frame.removeAttribute('aria-label');
 }
 
-if (document.querySelector('.gallery-media.has-photo')) {
-  document.querySelector('#gallery-status').hidden = true;
-}
 dialog.addEventListener('close', () => activePhoto?.focus());
