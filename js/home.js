@@ -24,7 +24,7 @@ for (const id of ['technical', 'euro-standard', 'euro-complex', 'four-posts']) {
 const photos = {
   'hero': { src: 'assets/photos/hero.webp', alt: 'Mercedes в моечном боксе «4 Поста»' },
   'wash': { src: 'assets/photos/wash-8555.webp', alt: 'Audi в пене и смыв водой' },
-  'interior': { src: 'assets/photos/interior.webp', alt: 'Чистка сидений, воздуховодов и пола автомобиля' },
+  'interior': { src: 'assets/photos/interior-8557.webp', alt: 'Ручная чистка обивки светлого сиденья' },
   'polish': { src: 'assets/photos/polish.webp', alt: 'Полировка двери синего автомобиля' },
   'tires': { src: 'assets/photos/tires-8556.webp', alt: 'Шиномонтаж: снятие колеса и ремонт прокола' },
   'gallery-1': { src: 'assets/photos/gallery-1.webp', alt: 'Общий вид боксов автомойки «4 Поста»' },
